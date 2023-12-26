@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<h1>Quieres casarte conmigo?</h1>
+<input/>
+<button>Ingresa tu respuesta hermosaaaa!!</button>
+
+
+<script>
+    var felicidad = "Si"
+    var input = document.querySelector("input")
+    input.focus();
+
+    function verificarRespuesta(){
+        if(input.value == "Si"){
+            alert("Te amo")
+        } else {
+            alert("Te odio")
+        }
+        input.value = ""
+        
+    }
+
+    var boton = document.querySelector("button")
+    boton.onclick = verificarRespuesta;
+
+</script> 

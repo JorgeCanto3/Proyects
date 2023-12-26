@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+
+
+<script>
+    function Saltar_Linea() {
+        document.write("<br>");
+    }
+         
+    function imprimir(frase){
+        document.write(frase)
+        Saltar_Linea()
+    }
+
+    var edad1 = 12
+    var edad2 = 20
+
+    imprimir("Nuestra diferencia de edad es..." + (edad1 - edad2))
+    
+    //Edades 2
+
+    function cinco_saltos_de_linea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<hr>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir_de_Amigos(frase){
+        document.write("<big>", frase, "</big>")
+        cinco_saltos_de_linea()
+    }
+
+
+    //Calculadora de IMC
+    function IMC(peso, altura ){
+        var IMC = peso / (altura * altura)
+        return IMC
+    }
+    //Promedio de IMC
+    function promedioIMC(peso1, altura1, nombre, peso2, altura2, nombre2){
+        var IMC1 = IMC(peso1, altura1)
+        var IMC2 = IMC(peso2, altura2)
+        var promedioIMC = (IMC1 + IMC2) / 2
+        imprimir("Hola "+ nombre+", tu IMC es: " + IMC1)
+        imprimir("Hola "+ nombre2+", tu IMC es: " + IMC2)
+
+        imprimir("Promedio de "+ nombre + " y "+ nombre2 +" es: " + promedioIMC)
+    }
+
+
+    var anho = 2025;
+        imprimir_de_Amigos("hola amigos");
+        // este código calcula las edades de Juan, Pedro y Carlos
+        imprimir_de_Amigos("Juan tiene: " + (anho - 2000) + " años");
+        imprimir_de_Amigos("Pedro tiene: " + (anho - 1995) + " años");
+        anho = 2030
+        imprimir_de_Amigos("Carlos tiene: " + (anho - 2005) + " años");
+
+
+        
+    IMC(70, 1.70, "Jorge")
+
+    promedioIMC(70, 1.70, "Jorge", 80, 1.80, "Juan");
+
+</script>

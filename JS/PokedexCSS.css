@@ -1,0 +1,108 @@
+body {
+    width: 30%;
+    height: 100vh;
+    margin: 0;
+    padding: .1px;
+    background-color: rgb(8, 8, 8);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-image: url(./PokedexI.gif);
+    background-size: auto 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.PokeBallImg {
+    position: absolute;
+    left: 500px;
+    right: 0px;
+    top: 270px;
+    bottom: 100px;
+}
+
+.BotonBusqueda {
+    position: relative;
+    right: 0px;
+    top: 665px;
+    left: 190px;
+}
+
+.BarraBusq {
+    position: relative;
+    right: 100px;
+    top: 510px;
+    left: 535px;
+}
+
+.Name {
+    height: 220px;
+    margin: 2rem auto;
+    text-align: center;
+    font-weight: bolder;
+    width: 700px;
+    font-size: 20px;
+}
+
+.Name p {
+    padding-left: 1100px;
+    padding-top: 212px;
+    padding-right: 300px;
+    padding-bottom: 300px;
+}
+
+.Stats {
+
+    display: flex;
+    font-weight: bold;
+    position: flex;
+    padding-left: 1300px;
+    padding-bottom: 500px;
+    top: 110px;
+    padding-top: 10px;
+    padding-right: 500px;
+    font-size: 20px;
+}
+
+.Habilidades {
+    color: aliceblue;
+    margin: auto;
+
+    display: flow-root;
+    font-weight: bold;
+    position: static;
+    top: 0px;
+    bottom: 80px;
+    left: 500px;
+    right: 80px;
+    padding-left: 250px;
+    padding-right: 80px;
+    padding-top: 0px;
+    padding-bottom: 1000px;
+    margin-bottom: 80px;
+    margin-right: 80px;
+    margin-left: 880px;
+    margin-top: 0px;
+
+
+}
+
+.Bienv {
+    color: bisque;
+    height: auto;
+    font-weight: bold;
+    position: absolute;
+    padding-left: 1130px;
+    padding-bottom: 500px;
+    top: 1px;
+    padding-top: 0px;
+
+
+}
+
+.Busq {
+    position: absolute;
+    color: aliceblue;
+    padding-left: 1250px;
+    padding-top: 70px;
+    padding-right: 90px;
+    font-size: x-large;
+}

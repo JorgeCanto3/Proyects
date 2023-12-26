@@ -1,0 +1,73 @@
+<head>
+    <canvas width="600" height="400"> </canvas>
+
+    <script>
+        var pantalla = document.querySelector("canvas");
+        var pincel = pantalla.getContext("2d");
+        pincel.fillStyle = "lightgrey"
+        pincel.fillRect(0, 0, 600, 400);
+        var radio = 10
+        var Xaleatorio 
+        var Yaleatorio  
+
+        function dibujarCirculo(x, y, radio,color) {
+            pincel.fillStyle = color;
+            pincel.beginPath();
+            pincel.arc(x, y, radio, 0, 2 * Math.PI);
+            pincel.fill();
+        }
+
+        function limpiarPantalla() {
+            pincel.clearRect(0, 0, 600, 400)
+        }
+
+        var x = 0;
+        var sentido = 1
+
+        function objetivo(x,y ){
+            dibujarCirculo(x,y, radio + 20,"red");
+            dibujarCirculo(x, y, radio + 10, "white");
+            dibujarCirculo(x, y, radio, "red");
+
+        }
+
+        function Aleatorio(maximo){
+        
+            return Math.floor(Math.random()*maximo)
+
+        }
+
+        function actulizarPantalla(){
+            limpiarPantalla();
+            Xaleatorio = Aleatorio(600)
+            Yaleatorio = Aleatorio(400)
+            objetivo(Xaleatorio, Yaleatorio)
+        }
+
+        function Tiro(evento) {
+            var x = evento.pageX - pantalla.offsetLeft
+            var y = evento.pageY - pantalla.offsetTop
+
+
+            if ((x < Xaleatorio + radio )&& 
+                (x > Xaleatorio - radio) && 
+                (y < Yaleatorio + radio) && 
+                (y > Yaleatorio - radio)){
+                alert("Diste en el blanco")
+            }
+            else{
+                alert("Fallaste")
+
+            }
+
+
+            console.log(x,y, Xaleatorio, Yaleatorio)
+            
+            }
+
+        setInterval(actulizarPantalla,5000)
+        
+        pantalla.onclick = Tiro;
+
+    </script>
+</head>

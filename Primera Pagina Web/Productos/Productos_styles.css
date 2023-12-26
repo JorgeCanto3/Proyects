@@ -1,0 +1,121 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #BBBB;
+    padding: 20px 0;
+
+}
+
+.encabezado{
+    position: relative;
+    width: 840px;
+    height: 200;
+    margin: 0 auto;
+
+}
+
+.logoHeader{
+    width: 250px;
+    height: 160px;
+}
+
+nav{
+    position: absolute;;
+    top: 70px;
+    right: 0;
+}
+ 
+
+nav li{
+    display: inline;    
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;;
+}
+
+.Productos{
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px;
+    
+}
+
+
+.Productos li{
+    display: inline-block;
+    text-align: center;
+    width: 32%;
+    vertical-align: top;
+    margin: .5% .5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 20px;
+
+}
+
+.Productos li:hover  {
+    border-color: #c78c19;
+}
+
+.Productos li:active {
+    border-color: #0a6d01;
+}
+
+.Productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.Productos li:hover h2{
+    font-size: 35px;
+}
+
+.description{
+    font-size: 18px;
+
+}
+
+.imgLi{
+    width: 50%;
+    height: 170px;
+    padding-bottom: 10PX;
+} 
+
+
+.precio{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    background: url(./elementos\ graficos/Test/bg.jpg);
+    padding: 40px;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.copyright{
+    color: aliceblue;
+    font-size: 15px;
+    margin: 20px;
+
+}
